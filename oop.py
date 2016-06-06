@@ -6,10 +6,10 @@ import os.path
 
 
 class Persoană:
-    # Responsabilitatea de stocare și logica de busyness sunt în aceeași clasă
-    # Vedem vre-o problemă?
+    # Responsabilitatea de stocare și logica de business sunt în aceeași clasă
+    # Vedem vreo problemă?
 
-    # logică de stocare
+    # Logică de stocare
     @classmethod
     def încarcă_toate(cls, path):
         persoane = []
@@ -24,7 +24,7 @@ class Persoană:
             self.venit_anual = data['venit']
             self.identificator = data['identificator']
 
-    # logică de busyness
+    # Logică de business
     @property
     def impozit(self):
         raise NotImplementedError()
